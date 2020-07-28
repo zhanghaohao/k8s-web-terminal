@@ -38,20 +38,20 @@ export GOPATH=~/go:$YOURPATH
 go build -o terminal k8s-web-terminal/src/start.go
 ./terminal
 ```
-The service listen on :8080
+The service listen on :8080   
 You can open it in browser http://localhost:8080
 ## fill node IP and container ID
 Here is the picture you will see after you start the service.
 
 ![image](https://raw.githubusercontent.com/zhanghaohao/pictures/master/terminal-1.png)
 
-After Websocket connection is build, you can interact with docker container freely.
-
-![image](https://raw.githubusercontent.com/zhanghaohao/pictures/master/terminal-2.png)
-
 Replace the node IP and container ID with your own.
 - node IP: the server IP hosts the container
 - container ID: the container ID
+
+After Websocket connection is build, you can interact with docker container freely.
+
+![image](https://raw.githubusercontent.com/zhanghaohao/pictures/master/terminal-2.png)   
 # How you can use k8s-web-terminal in your own code?
 
 
