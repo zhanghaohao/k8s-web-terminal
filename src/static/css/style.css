@@ -1,0 +1,33 @@
+body {
+    font-family: helvetica, sans-serif, arial;
+    font-size: 0.8em;
+    color: #111;
+}
+
+h1 {
+    text-align: center;
+}
+.cmdBox{
+    text-align: center;
+}
+.cmdBtn {
+    padding: 5px 10px;
+    margin: 20px 0;
+}
+
+#terminal-container {
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 2px;
+}
+
+#terminal-container .terminal {
+    background-color: #111;
+    color: #fafafa;
+    padding: 2px;
+}
+
+#terminal-container .terminal:focus .terminal-cursor {
+    background-color: #fafafa;
+}

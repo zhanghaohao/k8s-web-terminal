@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>K8S Terminal Index</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+<div class="cmdBox">
+    <form method="get" action="/container/terminal">
+        <h2>Node IP:</h2>
+        <input type="text" onfocus="this.value=''" value="10.2.62.1" name="nodeIP">
+        <h2>Container ID:</h2>
+        <input type="text" onfocus="this.value=''" value="29bd74794906" name="containerID">
+        <br>
+        <button type="submit" class="cmdBtn">执行命令行</button>
+    </form>
+</div>
+</body>
+</html>
