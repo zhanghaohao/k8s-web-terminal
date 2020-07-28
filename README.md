@@ -31,9 +31,12 @@ defaultKeyPath = "/root/ssl-docker/key.pem"
 ## run 
 export GOPATH=~/go:$YOURPATH
 go build -o terminal k8s-web-terminal/src/start.go
-## fill node IP and container ID
-
 ./terminal
+## fill node IP and container ID
+![avatar](https://github.com/zhanghaohao/pictures/blob/master/terminal-1.png)
+replace the node IP and container ID with your own.
+- node IP: the server IP hosts the container
+- container ID: the container ID
 # How you can use k8s-web-terminal in your own code?
 
 
