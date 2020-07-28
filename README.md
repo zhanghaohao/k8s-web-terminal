@@ -18,10 +18,10 @@ There are three APIs for k8s-web-terminal.
 - [Start an exec instance](https://docs.docker.com/engine/api/v1.30/#operation/ExecStart)
 - [Resize an exec instance](https://docs.docker.com/engine/api/v1.30/#operation/ExecResize)
 ## xterm.js plugin
-k8s-web-terminal uses xterm.js as frontend plugin of web terminal.
-and xterm.js plugin has been included in this project, it is located at k8s-web-terminal/src/static/xterm.js.
-k8s-web-terminal is compatible with xterm.js with version of lower than 1.1.0, because xterm.js with higher version use typescript.
-so if you want to replace xterm.js with higher version, you have to change the code accordingly.
+k8s-web-terminal uses xterm.js as frontend plugin of web terminal.  
+and xterm.js plugin has been included in this project, it is located at k8s-web-terminal/src/static/xterm.js.  
+k8s-web-terminal is compatible with xterm.js with version of lower than 1.1.0, because xterm.js with higher version use typescript.  
+so if you want to replace xterm.js with higher version, you have to change the code accordingly.   
 # How to run k8s-web-terminal?
 ## enable docker REST API
 docker can be configured to expose REST API or not, so first you have to enable it in the configuration file.
