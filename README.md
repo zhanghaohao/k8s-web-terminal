@@ -1,9 +1,9 @@
 # What is k8s-web-terminal?
 if you are using docker or kubernetes for your service, you will need to login the container and execute some commands.
 you have some ways to achieve this.
-- login by `docker exec`                      ;# Annoying, because you have to find the node, login to the node, find the container ...
-- login by management tool like Rancher       ;# Enjoyable but not Flexible, because you can not develop by your own requirement.
-- login by implement your own tool            ;# Enjoyable and Flexible
+- login by `docker exec`                      :# Annoying, because you have to find the node, login to the node, find the container ...
+- login by management tool like Rancher       :# Enjoyable but not Flexible, because you can not develop by your own requirement.
+- login by implement your own tool            :# Enjoyable and Flexible
 Now you can login to the container by the third way. Cool! right?
 # How does k8s-web-terminal work?
 k8s-web-terminal builds websocket connection between docker REST API and frontend xterm.js plugin.
@@ -33,7 +33,7 @@ export GOPATH=~/go:$YOURPATH
 go build -o terminal k8s-web-terminal/src/start.go
 ./terminal
 ## fill node IP and container ID
-![avatar](https://github.com/zhanghaohao/pictures/blob/master/terminal-1.png)
+![image](https://github.com/zhanghaohao/pictures/blob/master/terminal-1.png)
 replace the node IP and container ID with your own.
 - node IP: the server IP hosts the container
 - container ID: the container ID
