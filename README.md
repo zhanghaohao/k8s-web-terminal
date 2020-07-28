@@ -11,8 +11,7 @@ Enjoyable and Flexible.
 Now you can login to the container by the third way. Cool! right?
 # How does k8s-web-terminal work?
 k8s-web-terminal builds websocket connection between docker REST API and frontend js.  
-Commands from the frontend are send to docker container, and the output of container is send back.   
-If the container has any output, it can be sent to frontend immediately.   
+Input from frontend will be sent to docker container if there is any, and output from container will be sent to frontend if there is any.    
 The frontend use xterm.js plugin to render the terminal.  
 ## docker REST API
 There are three APIs for k8s-web-terminal.
