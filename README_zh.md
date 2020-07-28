@@ -18,9 +18,9 @@ k8s-web-terminal使用了三个API接口，
 - [Start an exec instance](https://docs.docker.com/engine/api/v1.30/#operation/ExecStart)
 - [Resize an exec instance](https://docs.docker.com/engine/api/v1.30/#operation/ExecResize)
 ## xterm.js插件
-xterm.js插件代码已经被包含在了项目代码里面，位置在`k8s-web-terminal/src/static/xterm.js`.
-k8s-web-terminal兼容xterm.js的版本小于1.1.0，因为高版本的xterm.js使用了typescript。
-如果你想替换xterm.js成高版本，你需要自行修改代码。
+xterm.js插件代码已经被包含在了项目代码里面，位置在`k8s-web-terminal/src/static/xterm.js`。    
+k8s-web-terminal兼容xterm.js的版本小于1.1.0，因为高版本的xterm.js使用了typescript。    
+如果你想替换xterm.js成高版本，你需要自行修改代码。   
 # 怎样运行k8s-web-terminal
 ## 启用docker rest api相关配置
 docker默认是没有启用暴露rest api监听接口的，所以你需要先修改配置启用。
@@ -43,7 +43,8 @@ go build -o terminal k8s-web-terminal/src/start.go
 
 把node IP和container ID替换为相应的。  
 - node IP: 容器所在节点的IP地址
-- container ID: 容器ID   
+- container ID: 容器ID      
+
 点击“执行命令行”按钮，在正确建立Websocket连接后会看到如下所示，  
 
 ![image](https://raw.githubusercontent.com/zhanghaohao/pictures/master/terminal-2.png)
