@@ -9,9 +9,9 @@
 这种方法既方便有灵活。
 现在你可以使用第三种方法来实现你的需求了。感觉很酷！对不对？
 # k8s-web-terminal的工作原理
-k8s-web-terminal在docker rest api和前端之间简历Websocket连接。
-前端如果有输入就会被发送到容器，容器如果有输出就会被发送给前端。
-前端内嵌了一个三方插件，叫xterm.js，这个插件负责渲染控制台。
+k8s-web-terminal在docker rest api和前端之间简历Websocket连接。   
+前端如果有输入就会被发送到容器，容器如果有输出就会被发送给前端。   
+前端内嵌了一个三方插件，叫xterm.js，这个插件负责渲染控制台。  
 ## docker REST API
 k8s-web-terminal使用了三个API接口，
 - [Create an exec instance](https://docs.docker.com/engine/api/v1.30/#operation/ContainerExec)
