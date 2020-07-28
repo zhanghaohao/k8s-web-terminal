@@ -10,9 +10,9 @@ Enjoyable but not Flexible, because you can not develop by your own requirement.
 Enjoyable and Flexible.
 Now you can login to the container by the third way. Cool! right?
 # How does k8s-web-terminal work?
-k8s-web-terminal builds websocket connection between docker REST API and frontend xterm.js plugin.
-commands from the frontend are send to docker container, and the output of container is send back.
-if the container has any output, it can be sent to frontend immediately.
+k8s-web-terminal builds websocket connection between docker REST API and frontend xterm.js plugin.  
+Commands from the frontend are send to docker container, and the output of container is send back.  
+If the container has any output, it can be sent to frontend immediately.
 ## docker REST API
 There are three APIs for k8s-web-terminal.
 - [Create an exec instance](https://docs.docker.com/engine/api/v1.30/#operation/ContainerExec)
@@ -20,9 +20,9 @@ There are three APIs for k8s-web-terminal.
 - [Resize an exec instance](https://docs.docker.com/engine/api/v1.30/#operation/ExecResize)
 ## xterm.js plugin
 k8s-web-terminal uses xterm.js as frontend plugin of web terminal.  
-and xterm.js plugin has been included in this project, it is located at k8s-web-terminal/src/static/xterm.js.  
+xterm.js plugin has been included in this project, it is located at k8s-web-terminal/src/static/xterm.js.  
 k8s-web-terminal is compatible with xterm.js with version of lower than 1.1.0, because xterm.js with higher version use typescript.  
-so if you want to replace xterm.js with higher version, you have to change the code accordingly.   
+If you want to replace xterm.js with higher version, you have to change the code accordingly.   
 # How to run k8s-web-terminal?
 ## enable docker REST API
 docker can be configured to expose REST API or not, so first you have to enable it in the configuration file.
